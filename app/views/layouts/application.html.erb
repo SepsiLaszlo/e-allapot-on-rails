@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EAllapot</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%= link_to "Rooms", rooms_path %>
+  <%= link_to "Contracts", contracts_path %>
+  <%= link_to "Users", users_path %>
+  <%= link_to "Floors", floors_path %>
+
+    <%= yield %>
+  </body>
+</html>

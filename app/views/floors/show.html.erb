@@ -1,0 +1,10 @@
+<h1>Floors#show</h1>
+
+<table>
+  <% @rooms.each do |room| %>
+    <tr>
+      <td><%= room.floor %></td>
+      <td><%= link_to room.number, room_path(room) %></td>
+    </tr>
+  <% end %>
+</table>

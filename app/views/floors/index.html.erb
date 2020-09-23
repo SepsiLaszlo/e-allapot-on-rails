@@ -1,0 +1,10 @@
+<h1>Floors#index</h1>
+<p>Find me in app/views/floors/index.html.erb</p>
+
+<table>
+  <%@floors.each do |floor| %>
+    <tr>
+      <td> <%= link_to floor, floor_path(floor) %></td>
+    </tr>
+  <%end %>
+</table>
